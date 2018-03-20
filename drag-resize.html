@@ -147,8 +147,8 @@
       }
     </style>
     <div id="container">
-      <slot></slot>
       <div id="overlay" draggable on-track="_onDrag">
+        <slot></slot>
         <div draggable class="top edge" hidden$="[[!resizeTop]]"
           on-track="_onResize"></div>
         <div draggable class="right edge" hidden$="[[!resizeRight]]"
